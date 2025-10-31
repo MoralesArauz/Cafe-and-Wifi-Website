@@ -1,9 +1,3 @@
-Absolutely, Adrián — let’s make your `README.md` clear, inviting, and informative. Here's a tailored draft for your **Cafe and Wifi Website** project:
-
----
-
-## 📄 `README.md` Template
-
 ```markdown
 # ☕ Cafe and Wifi Website
 
