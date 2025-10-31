@@ -1,0 +1,24 @@
+<!-- templates/cafes.html -->
+{% extends "base.html" %}
+
+{% block title %}Cafés | Café Explorer{% endblock %}
+
+{% block content %}
+  <h2 class="mb-4">Work-Friendly Cafés</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    {% for cafe in cafes %}
+        <div class="col">
+        <a href="{{ url_for('cafe_detail', cafe_id=cafe.id) }}" class="text-decoration-none text-dark">
+            <div class="card h-100 shadow-sm">
+            <img src="{{ cafe.img_url }}" class="card-img-top" alt="{{ cafe.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ cafe.name }}</h5>
+                <p class="card-text mb-1"><strong>Location:</strong> {{ cafe.location }}</p>
+                <p class="card-text"><strong>Price:</strong> {{ cafe.coffee_price or 'N/A' }}</p>
+            </div>
+            </div>
+        </a>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!-- templates/cafe_detail.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ cafe.name }} | Café Explorer{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-6">
+    <img src="{{ cafe.img_url }}" alt="{{ cafe.name }}" class="img-fluid rounded">
+  </div>
+  <div class="col-md-6">
+    <h2>{{ cafe.name }}</h2>
+    <p><strong>Location:</strong> {{ cafe.location }}</p>
+    <p><strong>Seats:</strong> {{ cafe.seats }}</p>
+    <p><strong>WiFi:</strong> {{ 'Yes' if cafe.has_wifi else 'No' }}</p>
+    <p><strong>Sockets:</strong> {{ 'Yes' if cafe.has_sockets else 'No' }}</p>
+    <p><strong>Toilet:</strong> {{ 'Yes' if cafe.has_toilet else 'No' }}</p>
+    <p><strong>Calls Allowed:</strong> {{ 'Yes' if cafe.can_take_calls else 'No' }}</p>
+    <p><strong>Price:</strong> {{ cafe.coffee_price or 'N/A' }}</p>
+    <a href="{{ cafe.map_url }}" target="_blank" class="btn btn-primary">View on Map</a>
+  </div>
+</div>
+{% endblock %}
