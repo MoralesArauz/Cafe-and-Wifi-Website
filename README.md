@@ -1,3 +1,5 @@
+---
+
 ```markdown
 # ☕ Cafe and Wifi Website
 
@@ -76,3 +78,4 @@ _Add screenshots of the homepage, café cards, and add form here._
 ## 📄 License
 
 MIT License © 2025 Adrian Morales
+```
