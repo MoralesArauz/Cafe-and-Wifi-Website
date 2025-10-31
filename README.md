@@ -1,6 +1,3 @@
----
-
-```markdown
 # ☕ Cafe and Wifi Website
 
 A Flask-based web application that helps users discover and share work-friendly cafés with WiFi across London. Built with Flask, SQLAlchemy, Bootstrap, and a custom API.
@@ -78,4 +75,3 @@ _Add screenshots of the homepage, café cards, and add form here._
 ## 📄 License
 
 MIT License © 2025 Adrian Morales
-```
